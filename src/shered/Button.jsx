@@ -1,5 +1,5 @@
 
-export const Button = ({type, text, fn, param}) => {  
+export const Button = ({type = 'button', text, fn, param}) => {  
   
   return(
     <button 

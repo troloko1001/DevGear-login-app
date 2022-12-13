@@ -1,14 +1,6 @@
-import { useStore, useStoreMap } from "effector-react"
-
 import { AccountText } from "../shered/AccountText"
-import { $userLoginizationDate } from "./loginBtn/model-login-btn"
 
-export const AccountContainer = () => {
-  const user = useStoreMap({
-    store: $userLoginizationDate,
-    keys: ['status'],
-    fn: obj => obj || {}
-  })
+export const AccountContainer = ({user}) => {
 
   switch(user.status) {
     case 'loading': {
