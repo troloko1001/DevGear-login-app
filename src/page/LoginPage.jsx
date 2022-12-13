@@ -1,12 +1,9 @@
-// import { createEvent} from 'effector'
-import { Loginization } from '../widgets/Loginzation'
-
-// const logOut = createEvent()
-// const regUser = createEvent()
+import { Autorization } from '../widgets/Autorization'
 
 export const LoginPage = () => {
  
    return (
-    <Loginization />
+    <Autorization />
    )
 }
+
