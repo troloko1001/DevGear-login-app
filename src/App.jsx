@@ -43,3 +43,4 @@ export default App
 // Will do all job with github
 // And do respectable distrucion of props
 
+// Change text color wich must depends of thee me of page(dark/light)

@@ -5,7 +5,6 @@ import { FakeAutorizationData } from '../entities/FakeAutorizationData'
 import { LogInBtn } from '../features/loginBtn/LogInBtn'
 import { $userLoginizationDate } from '../features/loginBtn/model-login-btn'
 import { ContainerForLoginInput } from '../shered/login-input/ContainerForLoginInput'
-import { MaxWithContainer } from '../shered/ui/maxWithContainer'
 
 
 export const Autorization = () => {
