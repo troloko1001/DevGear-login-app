@@ -1,9 +1,14 @@
+import { Text } from '../shered/Text'
 
 export const FakeAutorizationData = () => {
   return (
     <>
-      <p>Your email: some@gmail.com</p>
-      <p>Pass: some12345</p>
+      <Text>
+        <b >Your email:</b> some@gmail.com
+      </Text>
+      <Text>
+        <b>Pass:</b>  : some12345
+      </Text>
     </>
   )
 }
