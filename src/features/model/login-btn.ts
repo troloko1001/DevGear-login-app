@@ -3,6 +3,12 @@ import { createStore, createEffect } from "effector";
 import { logInFxType } from "../api/login-btn";
 import { login } from "../helper/user-fakeApi";
 
+// const logIn = (email: string, password: string) => {
+//   return login(email, password);
+// };
+
+// export const logInFx = createEffect<typeof logIn, Error>(logIn);
+
 export const logInFx = createEffect(({ email, password }: logInFxType) => {
   return login(email, password);
 });

@@ -21,8 +21,9 @@ type ParamType = {
 interface ButtonCommonType {
   type?: string;
   text: string;
-  param?: ParamType;
-  fn?: (param: ParamType | undefined) => void;
+  param: ParamType;
+  fn: (param: ParamType) => void;
+  // fn?: (param: ParamType | undefined) => void;
 }
 
 export const ButtonCommon = ({
@@ -45,7 +46,7 @@ export const ButtonCommon = ({
         },
       }}
       // className={classes.button}
-      onClick={() => fn(param)}
+      onClick={() => fn?.(param)}
       variant="contained"
       color="primary"
       // type={type}

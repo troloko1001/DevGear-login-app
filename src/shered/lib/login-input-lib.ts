@@ -25,17 +25,15 @@ declare module "@mui/material/styles" {
   }
 }
 
-export const theme = createTheme((theme) => {
-  return {
-    palette: {
-      primary: {
-        light: blue[300],
-        main: blue[400],
-        dark: blue[500],
-        contrastText: "white",
-      },
+export const theme = createTheme({
+  palette: {
+    primary: {
+      light: blue[300],
+      main: blue[400],
+      dark: blue[500],
+      contrastText: "white",
     },
-  };
+  },
 });
 
 export const useStyles: any = makeStyles({
